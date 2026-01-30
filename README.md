@@ -32,3 +32,22 @@ Antes de começar, você precisará de:
    ```bash
    git clone [https://github.com/Maria-laura-cruvinel/LaborIA.git](https://github.com/Maria-laura-cruvinel/LaborIA.git)
    cd LaborIA
+
+**Instale as dependências:**
+
+```bash
+pip install -r requirements.txt
+```
+**Execute a aplicação:**
+
+```bash
+streamlit run app.py
+```
+## 📖 Como Usar
+Ao abrir o link local gerado pelo Streamlit, vá até a barra lateral esquerda.
+
+Insira sua Groq API Key.
+
+No campo de chat na parte inferior, digite sua dúvida (ex: "Como funciona o aviso prévio trabalhado?").
+
+A IA responderá com a explicação legal, o artigo da CLT correspondente e os passos práticos que você deve tomar.
