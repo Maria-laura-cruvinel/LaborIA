@@ -1,4 +1,3 @@
-
 # Importa módulo para interagir com o sistema operacional
 import os
 
@@ -154,6 +153,7 @@ if prompt := st.chat_input("Qual sua dúvida sobre a CLT?"):
             # Caso ocorra erro na comunicação com a API, exibe mensagem de erro
             except Exception as e:
                 st.error(f"Ocorreu um erro ao se comunicar com a API da Groq: {e}")
+
 
 
 
