@@ -63,7 +63,7 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("Conheça o meu GitHub de projetos:")
 
-    # Link para o site da DSA
+    # Link para o github
     st.markdown("🔗 [Maria_Laura 梅花](https://github.com/Maria-laura-cruvinel)")
     
 
@@ -144,17 +144,18 @@ if prompt := st.chat_input("Qual sua dúvida sobre a CLT?"):
                 )
                 
                 # Extrai a resposta gerada pela API
-                dsa_ai_resposta = chat_completion.choices[0].message.content
+                clt_ai_resposta = chat_completion.choices[0].message.content
                 
                 # Exibe a resposta no Streamlit
-                st.markdown(dsa_ai_resposta)
+                st.markdown(clt_ai_resposta)
                 
                 # Armazena resposta do assistente no estado da sessão
-                st.session_state.messages.append({"role": "assistant", "content": dsa_ai_resposta})
+                st.session_state.messages.append({"role": "assistant", "content": clt_ai_resposta})
 
             # Caso ocorra erro na comunicação com a API, exibe mensagem de erro
             except Exception as e:
                 st.error(f"Ocorreu um erro ao se comunicar com a API da Groq: {e}")
+
 
 
 
