@@ -41,7 +41,7 @@ pip install -r requirements.txt
 **Execute a aplicação:**
 
 ```bash
-streamlit run app.py
+python -m streamlit run AssistenteCLT.py
 ```
 ## 📖 Como Usar
 Ao abrir o link local gerado pelo Streamlit, vá até a barra lateral esquerda.
